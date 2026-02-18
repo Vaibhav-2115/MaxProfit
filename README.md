@@ -75,7 +75,7 @@ Algorithm Steps:
 Time Complexity: O(2ⁿ)
 
 
-
+---
 # 🔄 Scheduling Flow
 
 START
@@ -111,7 +111,7 @@ END
   ↓
 Return bestSchedule
 
-
+---
 
 
 # 🚀 Key Features
