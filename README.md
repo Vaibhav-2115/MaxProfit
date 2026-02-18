@@ -47,7 +47,7 @@ Must be scheduled within the first 3 working days to earn profit.
 
 ---
 
-# 🧠 Algorithm Used – Backtracking Strategy (Non-Greedy Approach)
+# 🧠 Algorithm Used – Backtracking Strategy
 
 This system uses a Backtracking Algorithm to guarantee the optimal scheduling solution by exploring all possible project combinations.
 
@@ -78,23 +78,39 @@ Time Complexity: O(2ⁿ)
 
 # 🔄 Scheduling Flow
 
-START  
-↓  
-Fetch projects from database  
-↓  
-Sort projects by revenue and deadline  
-↓  
-Initialize usedDays[5], bestSchedule, maxProfit  
-↓  
-Call backtrack()  
-↓  
-Try assigning project to valid day  
-↓  
-Add profit → Recurse → Backtrack  
-↓  
-Compare and update best schedule  
-↓  
-Return bestSchedule  
+START
+  ↓
+Fetch projects from database
+  ↓
+Sort projects by revenue and deadline
+  ↓
+Initialize:
+  usedDays[5]
+  bestSchedule
+  maxProfit = 0
+  ↓
+Call backtrack()
+  ↓
+FOR each project
+    ↓
+    Try assigning project to valid day
+        ↓
+        If assigned:
+            Add revenue
+            Mark day used
+            Call backtrack()
+            Undo assignment (Backtrack)
+    ↓
+    Try skipping project
+  ↓
+Compare profit with maxProfit
+  ↓
+Store best schedule
+  ↓
+END
+  ↓
+Return bestSchedule
+
 
 ---
 
