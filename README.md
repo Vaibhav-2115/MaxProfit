@@ -1,6 +1,6 @@
 # 💼 ProfitMax Scheduler Solutions – Smart Project Scheduling System
 
-🚀 A profit-optimized project scheduling system built using Java, JDBC, and PostgreSQL, designed to automatically select and schedule client projects for maximum revenue using a Backtracking (Non-Greedy) Algorithm.
+🚀 A profit-optimized project scheduling system built using Java, JDBC, and PostgreSQL, designed to automatically select and schedule client projects for maximum revenue using a Backtracking Algorithm.
 
 ---
 
