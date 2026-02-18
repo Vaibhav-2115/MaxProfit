@@ -78,6 +78,7 @@ Time Complexity: O(2ⁿ)
 ---
 ## 🔄 Scheduling Flow
 
+```
 START
   ↓
 Fetch projects from database
